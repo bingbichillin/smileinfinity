@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Navbar with Dropdown</title>
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar Container */
+    nav {
+      background: #1e1e2f;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+      position: relative;
+      z-index: 1000;
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo a {
+      color: #ffffff;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .menu {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .menu a {
+      color: #f0f0f0;
+      text-decoration: none;
+      padding: 0.5rem 0.75rem;
+      transition: background 0.3s ease, color 0.3s ease;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .menu a:hover {
+      background-color: #292943;
+      color: #ffffff;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown > a::after {
+      content: " ▾";
+      font-size: 0.8rem;
+    }
+
+    .dropdown-content {
+      position: absolute;
+      top: 120%;
+      left: 0;
+      background-color: #2c2c3e;
+      min-width: 180px;
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 0;
+      border-radius: 6px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+
+    .dropdown:hover .dropdown-content {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .dropdown-content a {
+      color: #ddd;
+      padding: 0.6rem 1rem;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #3b3b55;
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding-top: 1rem;
+      }
+
+      .menu a {
+        width: 100%;
+      }
+
+      .dropdown-content {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        background: #2c2c3e;
+      }
+
+      .dropdown:hover .dropdown-content {
+        position: relative;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <a href="#">BrandName</a>
+      </div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+
+        <div class="dropdown">
+          <a href="#">Services</a>
+          <div class="dropdown-content">
+            <a href="#">Web Design</a>
+            <a href="#">SEO Optimization</a>
+            <a href="#">Content Marketing</a>
+            <a href="#">Social Media</a>
+          </div>
+        </div>
+
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+</body>
+</html>

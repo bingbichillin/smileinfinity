@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smile Infinity - Babysitting Service</title>
+  <meta name="description" content="Professional babysitting services in Japan">
+  <link rel="stylesheet" href="styles-jp.css">
+  <!-- Font import -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="flex min-h-screen flex-col bg-light-orange">
+    <!-- Header -->
+    <header class="bg-white py-4 shadow-sm">
+      <div class="container mx-auto px-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="relative w-12 h-12">
+            <img src="placeholder.svg" alt="KidsCare Logo" width="48" height="48" class="object-contain">
+          </div>
+          <span class="text-primary font-bold text-xl">Smile Infinity</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="#" class="text-gray-600 hover:text-primary text-sm font-medium">シッターとは</a>
+          <a href="#" class="text-gray-600 hover:text-primary text-sm font-medium">ご利用の流れ</a>
+          <a href="#" class="text-gray-600 hover:text-primary text-sm font-medium">法人利用について</a>
+          <a href="#" class="text-gray-600 hover:text-primary text-sm font-medium">よくあるご質問</a>
+          <!--<a href="#" class="text-gray-600 hover:text-primary text-sm font-medium">ログイン</a> -->
+          <!-- <a href="#" class="text-primary border border-primary rounded-full px-6 py-2 text-sm font-medium hover:bg-primary hover:text-white transition-colors">新規登録</a> -->
+        </nav>
+        <button class="md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-600">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <div class="relative">
+      <div class="w-full h-500 md:h-600 relative overflow-hidden">
+        <img src="assets/banner-image.webp" alt="Mother and child with cherry blossoms" class="object-cover w-full h-full">
+        <div class="absolute inset-0 bg-gradient-to-r from-black-30 to-transparent flex items-center">
+          <div class="container mx-auto px-4">
+            <div class="max-w-lg bg-white-80 backdrop-blur-sm p-8 rounded-lg">
+              <h1 class="text-3xl md:text-4xl font-bold text-primary mb-2">ベビーシッター・</h1>
+              <h1 class="text-3xl md:text-4xl font-bold text-primary mb-6">家事代行を探そう</h1>
+              <p class="text-gray-700 mb-8">即日から定期まで、安心安全のベビーシッター・家事代行サービス</p>
+              <div class="flex flex-wrap gap-4">
+                <button class="bg-primary hover:bg-primary-dark text-white rounded-full px-6 py-2">ベビーシッター</button>
+                <button class="border-primary text-primary hover:bg-primary hover:text-white rounded-full px-6 py-2 border">家事代行サポーター</button>
+              </div>
+              <div class="flex items-center mt-6">
+                <svg class="w-5 h-5 fill-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="w-5 h-5 fill-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="w-5 h-5 fill-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="w-5 h-5 fill-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg class="w-5 h-5 fill-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <span class="ml-2 text-sm text-gray-600">4.8 (230件の評価)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute -bottom-6 w-full">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120" class="w-full">
+          <path fill="#FFF8F2" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Search Section -->
+    <section class="py-12 relative z-10">
+      <div class="container mx-auto px-4">
+        <div class="bg-white rounded-xl shadow-md p-6 md:p-8">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="relative">
+              <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="18" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" placeholder="エリア、駅名など" class="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+            </div>
+            <div class="relative">
+              <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="18" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <input type="text" placeholder="日付" class="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+            </div>
+            <div class="relative">
+              <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="18" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <input type="text" placeholder="時間" class="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+            </div>
+            <button class="bg-primary hover:bg-primary-dark text-white py-3 rounded-lg">検索</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">サービスについて</h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="max-w-2xl mx-auto text-gray-600">
+            Smile Infinityは、日本の伝統とモダンなサービスを融合した、安心・安全のベビーシッターサービスです。
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-light-orange rounded-lg p-6 text-center">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFC278" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">認定シッター</h3>
+            <p class="text-gray-600">全てのシッターは厳格な審査と研修を受けた認定プロフェッショナルです。</p>
+          </div>
+
+          <div class="bg-light-orange rounded-lg p-6 text-center">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFC278" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">安心の保証</h3>
+            <p class="text-gray-600">万が一の場合も安心の保険・保証制度を完備しています。</p>
+          </div>
+
+          <div class="bg-light-orange rounded-lg p-6 text-center">
+            <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFC278" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">柔軟な予約</h3>
+            <p class="text-gray-600">急な依頼から定期的な予約まで、あなたのニーズに合わせたサービスを提供します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-light-orange">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">サービス内容</h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="max-w-2xl mx-auto text-gray-600">
+            お子様のケアから家事のサポートまで、幅広いサービスを提供しています。
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="h-48 bg-gray-200 relative">
+              <img src="placeholder.svg" alt="Babysitting service" class="object-cover w-full h-full">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">ベビーシッター</h3>
+              <p class="text-gray-600 mb-4">
+                お子様の年齢に合わせた遊びや学習のサポート、食事、お風呂など、きめ細やかなケアを提供します。
+              </p>
+              <a href="#" class="text-primary font-medium hover:underline">
+                詳細を見る →
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="h-48 bg-gray-200 relative">
+              <img src="placeholder.svg" alt="Housekeeping service" class="object-cover w-full h-full">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">家事代行</h3>
+              <p class="text-gray-600 mb-4">
+                掃除、洗濯、料理など、日常の家事をプロの技術でサポートします。忙しい毎日の強い味方です。
+              </p>
+              <a href="#" class="text-primary font-medium hover:underline">
+                詳細を見る →
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="h-48 bg-gray-200 relative">
+              <img src="placeholder.svg" alt="Event childcare" class="object-cover w-full h-full">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-2">イベント保育</h3>
+              <p class="text-gray-600 mb-4">
+                結婚式や企業イベントなど、各種イベントでのお子様のケアを担当します。安心してイベントをお楽しみいただけます。
+              </p>
+              <a href="#" class="text-primary font-medium hover:underline">
+                詳細を見る →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">ニュース</h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="md:col-span-2">
+            <div class="border-2 border-primary rounded-xl p-6 bg-white">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-light-orange rounded-xl p-6">
+                  <div class="space-y-2">
+                    <div class="w-full h-4 bg-light-primary rounded"></div>
+                    <div class="w-full h-4 bg-light-primary rounded"></div>
+                    <div class="w-full h-4 bg-light-primary rounded"></div>
+                    <div class="w-full h-4 bg-light-primary rounded"></div>
+                    <div class="w-full h-4 bg-light-primary rounded"></div>
+                    <div class="w-3/4 h-4 bg-light-primary rounded"></div>
+                  </div>
+
+                  <button class="mt-8 bg-primary text-white px-6 py-2 rounded-full text-sm">
+                    イベント情報を見る
+                  </button>
+                </div>
+
+                <div class="bg-light-orange rounded-xl p-6 flex items-center justify-center">
+                  <div class="w-32 h-32 border-2 border-primary rounded-xl flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#FFC278" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                      <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                      <line x1="12" y1="22" x2="12" y2="12"></line>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Chat Section -->
+          <!-- <div class="md:col-span-1">
+            <div class="border-2 border-primary rounded-xl p-6 bg-white h-full">
+              <h2 class="text-xl font-bold text-primary mb-6">AIチャット</h2>
+
+              <div class="flex flex-col h-calc-100-minus-4rem">
+                <div class="text-right text-sm text-primary mb-4">6日4月2025年、14:48</div>
+
+                <div class="bg-light-orange rounded-xl p-4 mb-4">
+                  <div class="space-y-2">
+                    <div class="w-full h-3 bg-light-primary rounded"></div>
+                    <div class="w-full h-3 bg-light-primary rounded"></div>
+                    <div class="w-full h-3 bg-light-primary rounded"></div>
+                    <div class="w-full h-3 bg-light-primary rounded"></div>
+                    <div class="w-full h-3 bg-light-primary rounded"></div>
+                    <div class="w-1/2 h-3 bg-light-primary rounded"></div>
+                  </div>
+                </div>
+
+                <div class="mt-auto flex items-center">
+                  <span class="text-3xl text-primary mr-2">+</span>
+                  <div class="flex-1 h-10 border-2 border-primary rounded-full"></div>
+                </div>
+              </div>
+            </div> --> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-light-orange">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="bg-white rounded-lg p-6 text-center shadow-md">
+            <h3 class="text-3xl font-bold text-primary">
+              230<span class="text-lg">万件</span>
+            </h3>
+            <p class="text-gray-600 text-sm mt-2">ベビーシッター・家事代行実績</p>
+          </div>
+
+          <div class="bg-white rounded-lg p-6 text-center shadow-md">
+            <h3 class="text-3xl font-bold text-primary">
+              4500<span class="text-lg">名</span>
+            </h3>
+            <p class="text-gray-600 text-sm mt-2">全国のシッター数</p>
+          </div>
+
+          <div class="bg-white rounded-lg p-6 text-center shadow-md">
+            <h3 class="text-3xl font-bold text-primary">保育士</h3>
+            <p class="text-gray-600 text-sm mt-2">資格保有シッター多数</p>
+          </div>
+
+          <div class="bg-white rounded-lg p-6 text-center shadow-md">
+            <h3 class="text-3xl font-bold text-primary">東京都</h3>
+            <p class="text-gray-600 text-sm mt-2">ベビーシッター割引券利用可能</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-primary mb-4">お問い合わせ</h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="max-w-2xl mx-auto text-gray-600">
+            ご質問やご相談がございましたら、お気軽にお問い合わせください。
+          </p>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+          <div class="bg-light-orange rounded-lg p-8 shadow-md">
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+                    お名前
+                  </label>
+                  <input type="text" id="name" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+                <div>
+                  <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                    メールアドレス
+                  </label>
+                  <input type="email" id="email" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                </div>
+              </div>
+              <div>
+                <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">
+                  件名
+                </label>
+                <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+                  メッセージ
+                </label>
+                <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+              </div>
+              <div class="text-center">
+                <button class="bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-full">
+                  送信する
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <div class="bg-white rounded-full w-10 h-10 flex items-center justify-center">
+                <span class="text-primary text-xs font-bold">ロゴ</span>
+              </div>
+              <span class="font-bold text-lg">Smile Infinity</span>
+            </div>
+            <p class="text-sm">安心・安全のベビーシッターと家事代行サービスを提供しています。</p>
+          </div>
+
+          <div>
+            <h3 class="font-bold mb-4">サービス</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#" class="hover:underline">
+                  ベビーシッター
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">
+                  家事代行
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">
+                  イベント保育
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">
+                  企業向けサービス
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-bold mb-4">会社情報</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a href="#" class="hover:underline">
+                  会社概要
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">
+                  採用情報
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">
+                  プライバシーポリシー
+                </a>
+              </li>
+              <li>
+                <a href="#" class="hover:underline">
+                  利用規約
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-bold mb-4">お問い合わせ</h3>
+            <ul class="space-y-2 text-sm">
+              <li>〒150-0002 東京都渋谷区1-2-3</li>
+              <li>TEL: 03-1234-5678</li>
+              <li>Email: info@kidscarejapan.com</li>
+            </ul>
+            <div class="flex gap-4 mt-4">
+              <a href="#" class="hover:opacity-80">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" class="hover:opacity-80">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" class="hover:opacity-80">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-white-30 mt-8 pt-8 text-center text-sm">
+          <p>&copy; <script>document.write(new Date().getFullYear())</script> Smile Infinity. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Chat Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+      <!--<button class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-primary-dark transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+      </button> -->
+    </div>
+  </div>
+</body>
+</html>
